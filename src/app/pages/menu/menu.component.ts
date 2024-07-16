@@ -17,10 +17,13 @@ import { ItemMenuComponent } from "./menu-components/item-menu.component";
             text-xl
         ">
         <img src="../../../assets/angular_pride.png" class="w-[94px]" alt="">
-        <h1>EXEMPLOS DE STYLE COM TAILWIND</h1>
-        <ul class="text-zinc-800 flex flex-col gap-11">
+        <h1>DICAS DE FUNCIONALIDADES</h1>
+        <ul class="text-zinc-800 flex flex-col gap-4">
             <li>
                 <item-menu item-link="widget">Widget Notification</item-menu>
+            </li>
+            <li>
+                <item-menu item-link="json">Json component</item-menu>
             </li>
         </ul>
 

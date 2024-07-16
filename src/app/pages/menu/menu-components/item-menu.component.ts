@@ -16,8 +16,14 @@ import { Home } from "lucide-angular"
             hover:to-pink-400
             text-yellow-50
             text-lg
-            px-5
-            py-3
+            flex
+            flex-col
+            justify-center
+            text-center
+            h-10
+            w-48
+
+            
             ">
         <ng-content />
     </a>
