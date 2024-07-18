@@ -8,7 +8,7 @@ export class AppModule { }
     selector: 'home-app',
     standalone: true,
     template: `
-    <main class="h-screen border-b-zinc-400 dark:bg-zinc-950 flex items-center justify-center ">
+    <main class="flex items-center justify-center h-screen border-b-zinc-400 dark:bg-zinc-950 ">
     
         <div class="w-[448px] rounded overflow-hidden">
             <!-- header -->

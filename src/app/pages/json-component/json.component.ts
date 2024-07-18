@@ -24,8 +24,8 @@ export class JsonComponent implements OnInit{
     alunoService = inject(AlunoService);
 
     alunos$ = new Observable<Aluno[]>();
-    nome!: string;
-    idade!: number;
+    // nome!: string;
+    // idade!: number;
 
     form = new FormGroup({
         id: new FormControl(''),
@@ -39,22 +39,13 @@ export class JsonComponent implements OnInit{
     }
 
     submit(){
-        // const id = new Date().getTime();
         const id = Math.floor(Math.random() * 9000) + 1000;
         this.form.controls.id.setValue(id.toString());
-        console.log(this.form.value);
-        const t = {id:'222',nome: "ddd", idade: 'ff'};
-        console.log(t);
-
         this.alunoService.cadastrarAluno(this.form.value)
             .subscribe(()=>{
-                console.log("enviado");
                 this.getAlunos();
             });
-        this.form.reset();
-
-        
-        
+        this.form.reset();  
     }
 
     getAlunos(): void{
